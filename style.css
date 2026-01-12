@@ -256,4 +256,60 @@ font-size: 20px;
 .pro-list{
   justify-content: center;
 }
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* 📱 Mobile phones */
+@media (max-width: 600px) {
+
+  .navbar-links,
+  .links {
+    display: none;
+  }
+
+  .header {
+    padding: 40px 15px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .fonts {
+    font-size: 20px;
+  }
+
+  .header img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cat-list,
+  .pro-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 📲 Tablets */
+@media (min-width: 601px) and (max-width: 992px) {
+
+  .header {
+    padding: 60px 30px;
+    gap: 40px;
+  }
+
+  .cat-list,
+  .pro-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 💻 Laptops & Desktops */
+@media (min-width: 993px) {
+
+  .cat-list,
+  .pro-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 
